@@ -8,33 +8,33 @@
 </head>
 <body>
     <h1>Ramen Rating App</h1>
-    <div id="ramen-images"></div>
-    <h4>Ramen Rater</h4>
-        <img src="images/gyukotsu.jpg" alt="">
-        <img src="images/kojiro.jpg" alt="">
-        <img src="images/naruto.jpg" alt="">
-        <img src="images/nirvana.jpg" alt="">
-        <img src="images/shoyu.jpg" alt="">
-    </div>
+
+    
+
     <div id="ramen-menu"></div>
-    
+    <h4>Ramen Rater</h4>
+    <img src="Images/kojiro.jpg" alt="">
+    <img src="Images/naruto.jpg" alt="">
+    <img src="Images/shoyu.jpg" alt="">
+
+
     <div id="ramen-detail">
-        <h2 class="detail-name">Select a ramen</h2>
-        <p class="detail-restaurant"></p>
-        <p class="detail-rating"></p>
-        <p class="detail-comment"></p>
+        <img id="detail-image" src="Images/gyukotsu.jpg" alt="Ramen Image">
+        <h2 id="detail-name"></h2>
+        <p id="detail-restaurant"></p>
+        <p><strong>Rating:</strong> <span id="detail-rating"></span></p>
+        <p><strong>Comment:</strong> <span id="detail-comment"></span></p>
     </div>
-    
+
     <form id="new-ramen-form">
-        <h3>Add New Ramen</h3>
-        <input type="text" name="name" placeholder="Ramen Name" required><br>
-        <input type="text" name="restaurant" placeholder="Restaurant" required><br>
-        <input type="text" name="image" placeholder="Image filename" required><br>
-        <input type="number" name="rating" placeholder="Rating (1-5)" min="1" max="5"><br>
-        <textarea name="comment" placeholder="Comment"></textarea><br>
+        <input type="text" id="name" placeholder="Ramen Name" required>
+        <input type="text" id="restaurant" placeholder="Restaurant Name" required>
+        <input type="url" id="image" placeholder="Image URL" required>
+        <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5" required>
+        <textarea id="comment" placeholder="Add a comment" required></textarea>
         <button type="submit">Add Ramen</button>
     </form>
 
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
