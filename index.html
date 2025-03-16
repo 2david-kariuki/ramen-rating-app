@@ -9,7 +9,15 @@
 <body>
     <h1>Ramen Rating App</h1>
 
-    
+    <style>
+        img {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: rgb(red, green, blue);
+        }
+    </style>
 
     <div id="ramen-menu"></div>
     <h4>Ramen Rater</h4>
@@ -32,7 +40,7 @@
         <input type="url" id="image" placeholder="Image URL" required>
         <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5" required>
         <textarea id="comment" placeholder="Add a comment" required></textarea>
-        <button type="submit">Add Ramen</button>
+        <button type="submit">create</button>
     </form>
 
     <script src="./index.js"></script>
